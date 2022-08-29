@@ -1,0 +1,72 @@
+.paging {
+    position: absolute;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    /* Căn chỉnh items theo chiều ngang/ dọc. Ở đây căn theo chiều ngang*/
+    align-items: center;
+    /* căn giữa theo chiều ngang */
+    justify-content: center;
+    border-top: solid -5px #bbbbbb;
+    /* dựa trên vị trí cuộn */
+    /* position: sticky; */
+    bottom: 0;
+    z-index: 1;
+}
+
+.paging__left {
+    /* vị trí chỉ phụ thuộc vào cha, cha phải có 1 position */
+    position: absolute;
+    /* căn sát về bên trái */
+    left: 0px;
+}
+
+.paging__right {
+    position: absolute;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.paging-select {
+    padding: 8px 4px 8px 4px;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+}
+
+.page-index .page-number {
+    padding: 0 6px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+
+/* .page-index .page-number:hover {
+    border: solid 1px #bbbbbb;
+} */
+
+.page-index .selected {
+    border: solid 1px #bbbbbb;
+}
+
+.page-prev {
+    margin-right: 13px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.page-next {
+    margin-left: 13px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}

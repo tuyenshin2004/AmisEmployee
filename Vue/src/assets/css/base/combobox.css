@@ -1,0 +1,112 @@
+.combobox {
+    position: relative;
+    /* flex-direction: row; */
+    display: inline-block;
+}
+
+.combobox__content {
+    /* display: flex;
+    flex-direction: column;
+    padding: 4px 0px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0px 3px 6px #00000016; */
+    position: absolute;
+    top: 105%;
+    background-color: #ffff;
+    width: 100%;
+    border: solid 1px #bbbbbb;
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.combobox__content .scroll {
+    height: 130px !important;
+}
+
+.combobox__content table {
+    width: 100%;
+    border-radius: 4px;
+    border-spacing: 0;
+    background-color: #ffff;
+}
+
+.combobox__table th,
+.combobox__table td {
+    padding: 0 10px;
+    height: 32px;
+    font-weight: 600px !important;
+}
+
+.combobox__table thead {
+    background-color: #f4f5f8 !important;
+    position: sticky;
+    top: 0;
+}
+
+.department-code {
+    width: 90px !important;
+    height: 32px;
+}
+
+#txtDepartmentName {
+    width: calc(100% - 90px);
+}
+
+.combobox .scroll__table {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+th.department-name {
+    height: 32px;
+    /* đặt max with thì mới có thể overflow table */
+    max-width: calc(100% - 22px - 110px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 60px;
+}
+
+.combobox__table tr:hover td {
+    color: #35bf22 !important;
+    background-color: #e8e9ec !important;
+}
+
+.add__department {
+    color: #35bf22;
+    background-color: #e8e9ec;
+    margin: 3px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.combobox__table .selected {
+    color: #35bf22 !important;
+    background-color: #e8e9ec !important;
+    font-weight: 600px !important;
+}
+
+.combobox__table .focus {
+    color: #66b45c !important;
+    font-weight: 600px !important;
+    background-color: #f4f4f4 !important;
+}
+
+.combobox .btn__combobox {
+    position: absolute;
+    top: 27px;
+    right: 1px;
+    height: 30px !important;
+    border: none;
+}

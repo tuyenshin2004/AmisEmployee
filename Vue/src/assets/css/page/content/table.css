@@ -1,0 +1,140 @@
+    @import url(../../base/text.css);
+    .page-table {
+        /* box-sizing: border-box; */
+        height: calc(100% - 120px);
+        width: calc(100% - 48px);
+        position: relative;
+        margin: 16px 30px 8px 16px;
+    }
+    
+    .table {
+        /* Các đường viền được ngăn cách; mỗi ô sẽ hiển thị các đường viền riêng của nó */
+        border-collapse: separate;
+        /* Khoảng cách giữa các viền  */
+        border-spacing: 0;
+        /* border: unset; */
+        background-color: #ffff;
+        /* box-sizing: border-box; */
+        /* height: 100px; */
+    }
+    /* thanh cuộn cho table */
+    
+    .scroll-table {
+        /* box-sizing: border-box; */
+        height: calc(100% - 60px);
+        overflow: auto;
+    }
+    
+    .table thead {
+        /* dựa trên vị trí cuộn */
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    }
+    
+    .table tr {
+        height: 44px;
+        /* box-sizing: border-box; */
+    }
+    /* tr:nth-child(even) {
+    background-color: #fcf9f9;
+} */
+    
+    .table tr th {
+        padding-right: 8px;
+        padding-left: 10px;
+        /* box-sizing: border-box; */
+        background-color: #e5e8ec;
+        border-right: solid 1px #bbbbbb;
+        border-bottom: solid 1px #bbbbbb;
+    }
+    
+    .table tr td {
+        padding-right: 8px;
+        padding-left: 10px;
+        /* box-sizing: border-box; */
+        border-right: solid 1px #bbbbbb;
+        border-bottom: solid 1px #bbbbbb;
+    }
+    
+    .table .row td {
+        background-color: #ffff;
+    }
+    
+    .table .checkbox-padding {
+        padding: 0 10px;
+    }
+    /* label {
+    margin-left: 8px;
+} */
+    
+    tbody>tr:hover td {
+        cursor: pointer;
+        background-color: #f2f9ff !important;
+    }
+    
+    .row-selected td {
+        background-color: #f2f9ff !important;
+    }
+    /* xét độ rộng cho các tiêu đề của các cột  */
+    
+    .row-gender {
+        width: 120px;
+    }
+    
+    .row-name {
+        width: 120px;
+    }
+    
+    .row-date {
+        width: 120px;
+    }
+    
+    .row-identity {
+        width: 250px;
+    }
+    
+    .row-position {
+        width: 100px;
+    }
+    
+    .row-department {
+        width: 120px;
+    }
+    
+    .row-account-number {
+        width: 200px;
+    }
+    
+    .row-bank {
+        width: 250px;
+    }
+    
+    .row-branch {
+        width: 250px;
+    }
+    
+    .row-function {
+        /* dựa trên vị trí cuộn */
+        position: sticky;
+        right: 0;
+        z-index: 0;
+        border-right: none !important;
+        border-left: solid 1px #bbbbbb;
+        width: 150px;
+    }
+    
+    .row-checkbox {
+        width: 46px;
+        /* dựa trên vị trí cuộn */
+        position: sticky;
+        left: 0;
+        z-index: 0;
+    }
+    
+    .row-code {
+        width: 150px;
+        position: sticky;
+        left: 37px;
+        z-index: 0;
+    }

@@ -1,0 +1,110 @@
+.form-process {
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100vh - 77px);
+    overflow: auto;
+    background-color: #eceef1;
+    position: relative;
+}
+
+.process-area {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    width: 690px;
+    height: 380px;
+}
+
+.form-process__title {
+    text-transform: uppercase;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.process-area .content {
+    position: relative;
+}
+
+.content__inventory {
+    background-image: url(../../../Resource/img/qt_Kho.10b11e5a.svg);
+}
+
+.dictionary-area {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    margin-top: 10px;
+    height: 70px;
+    display: flex;
+}
+
+.dictionary-item {
+    border-right: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dictionary-item div {
+    margin: auto;
+}
+
+.dictionary-item:hover {
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgb(0 0 0 / 25%);
+}
+
+.report-area {
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    margin-left: 10px;
+    width: 300px !important;
+    min-width: 300px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.report__content ul li {
+    display: flex;
+    align-items: center;
+    height: 74px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+}
+
+.report__content ul li:hover {
+    color: #0075c0;
+}
+
+.report__content li:before {
+    content: "\2022";
+    color: #646464;
+    font-size: 24px;
+    margin-right: 12px;
+}
+
+.report__content ul {
+    margin: 0;
+    padding: 0 16px;
+    display: list-item;
+}
+
+.report__footer {
+    border-top: 1px solid #e5e5e5;
+    cursor: pointer;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color: #0075c0;
+}

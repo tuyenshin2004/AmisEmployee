@@ -1,0 +1,81 @@
+.menu {
+    /* height bằng chiều cao của main */
+    height: 100%;
+    grid-row: 1/3;
+    grid-column: 1/2;
+    background-color: rgb(56, 57, 61);
+    /* box-shadow: 3px 0px 5px #bbbbbb; */
+    position: relative;
+}
+
+.menu__top {
+    width: 100%;
+    height: 48px;
+    /* cho nó khớp với đúng kích thước mình muốn đặt */
+    flex-shrink: 0;
+    display: flex;
+    /* căn giữa các đối tượng con */
+    align-items: center;
+    /* đặt box-sizing để khi đặt margin hay pading cũng không vượt quá  độ rộng ban đầu */
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+
+
+/* thanh cuộn cho menu */
+
+.menu--scroll {
+    box-sizing: border-box;
+    height: calc(100% - 48px);
+    /* thanh cuộn */
+    overflow: auto;
+}
+
+.menu__bottom {
+    height: calc(100% - 48px);
+    width: 100%;
+    /* box-shadow: 3px 0px 5px #bbbbbb; */
+    position: relative;
+}
+
+.menu-top__sidebar {
+    margin-right: 10px;
+    width: 24px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-top__logo {
+    width: 100%;
+    height: 32px;
+    background-repeat: no-repeat;
+    /* về sát lề  bên trái */
+    background-position: 0 center;
+    /* Thay đổi kích thước hình nền để đảm bảo hình ảnh hiển thị đầy đủ */
+    background-size: contain;
+}
+
+.menu .router-link-active {
+    background-color: #58595d;
+    color: #ffffff;
+    /* text style medium */
+    font-weight: 500;
+}
+
+.menu .router-link-exact-active {
+    height: 44px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    /* đảm bảo chắc chắn độ rộng */
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu .menu-item .icon {
+    margin-right: 6px;
+}

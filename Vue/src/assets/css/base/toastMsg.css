@@ -1,0 +1,57 @@
+.toast-box {
+    /* đặt toast bên góc phải dưới màn hình */
+    position: fixed;
+    top: 100px;
+    right: 0;
+    z-index: 200;
+    transition: all linear 0.3s;
+}
+
+.toast-item {
+    /* các con thẳng hàng */
+    display: flex;
+    border-radius: 4px;
+    border: 1px solid #bbbbbb;
+    /* Hiệu ứng bóng đổ : ngang, dọc, độ nhoè, màu */
+    box-shadow: 3px 3px 5px #AAA;
+    padding: 16px 8px 16px 16px;
+    /* cho ỉtems ra chính giữa ra giữa */
+    align-items: center;
+    text-align: center;
+    margin: 0px 8px 16px 0px;
+    background-color: #ffffff;
+    animation: slideInLeft ease .5s, fadeOut linear 1s 3s forwards;
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(calc(100% + 32px));
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.toast-item__icon {
+    /* sửa fontawesome như text bình thường */
+    font-size: 24px;
+    margin: 0px 16px 0px 0px;
+}
+
+.toast-item__text {
+    color: #000000;
+    margin: 0 30px 0px 0px;
+    font-size: 16px;
+}
+
+.toast-item .icon__close {
+    cursor: pointer;
+}

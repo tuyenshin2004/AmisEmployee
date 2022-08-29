@@ -1,0 +1,27 @@
+.page-header__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.page-header__title {
+    font-weight: 800;
+    font-size: 24px;
+    min-width: 115px;
+}
+
+.page-header__content .add-button {
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+
+.page-header .back-all {
+    display: flex;
+    align-items: center;
+}
+
+.page-header .back-all a {
+    color: rgb(0, 117, 192);
+    margin-left: 4px;
+}

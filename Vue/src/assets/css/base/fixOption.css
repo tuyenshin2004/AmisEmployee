@@ -1,0 +1,35 @@
+/* Cho nút sửa */
+
+.data-fix {
+    position: fixed;
+    top: 0;
+    width: 130px;
+    right: 80px;
+    z-index: 10 !important;
+    background-color: #ffff;
+    border: solid 1px #BBBB;
+    /* display: none; */
+}
+
+.data-fix .data__item {
+    list-style-type: none;
+    padding: 8px 8px 8px 8px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.data-fix .data__item:hover {
+    background-color: #e9ebee;
+    color: #2ca01c;
+}
+
+.data-fix .data__item:active {
+    background-color: #e9ebee;
+    color: #2ca01c;
+}
+
+.data-fix .selected {
+    /* pointer-events: none; */
+    background-color: #e9ebee;
+    color: #2ca01c;
+}

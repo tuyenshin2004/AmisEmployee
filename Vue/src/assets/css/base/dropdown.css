@@ -1,0 +1,109 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown__content {
+    /* display: none; */
+    position: absolute;
+    top: 105%;
+    background-color: #ffff;
+    width: 426px;
+    border: solid 1px #bbbbbb;
+    z-index: 1;
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.dropdown__content .scroll {
+    height: 130px !important;
+}
+
+.dropdown__input input {
+    padding-right: 30px;
+}
+
+.dropdown button {
+    position: absolute;
+    right: 1px;
+    bottom: 0;
+    width: 30px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    background-color: #e0e0e0;
+}
+
+.dropdown__content table {
+    width: 424px;
+    border-radius: 4px;
+    border-spacing: 0;
+    background-color: #ffff;
+}
+
+.dropdown__table th,
+.dropdown__table td {
+    padding: 0 10px;
+    height: 32px;
+    font-weight: 600px !important;
+}
+
+.dropdown__table thead {
+    background-color: #f4f5f8 !important;
+    position: sticky;
+    top: 0;
+}
+
+.department-code {
+    width: 90px !important;
+    height: 32px;
+}
+
+#txtDepartmentName {
+    width: calc(100% - 90px);
+}
+
+.dropdown .scroll__table {
+    box-sizing: border-box;
+    height: 100%;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+th.department-name {
+    height: 32px;
+    /* đặt max with thì mới có thể overflow table */
+    max-width: calc(424px - 22px - 110px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 60px;
+}
+
+.dropdown__table tr:hover td {
+    color: #35bf22 !important;
+    background-color: #e8e9ec !important;
+}
+
+.add__department {
+    color: #35bf22;
+    background-color: #e8e9ec;
+    margin: 3px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown__table .selected {
+    color: #35bf22 !important;
+    background-color: #e8e9ec !important;
+    font-weight: 600px !important;
+}

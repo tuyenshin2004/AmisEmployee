@@ -1,0 +1,20 @@
+.vertical-center {
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.flex {
+    display: flex!important;
+}
+
+.flex-grow {
+    flex-grow: 1!important;
+}
+
+.mi-h-340 {
+    height: 340px;
+}

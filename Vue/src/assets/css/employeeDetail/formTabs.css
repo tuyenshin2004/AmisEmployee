@@ -1,0 +1,43 @@
+.form__tabs-container {
+    position: relative;
+    height: 280px;
+}
+
+.tabs {
+    display: flex;
+    height: 32px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.form-tabs__tab {
+    height: 30px;
+    padding: 0px 8px;
+    color: #111;
+    background-color: #f2f9ff;
+    border: solid 1px #bbbbbb;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0px;
+}
+
+.form-tabs__tab:hover {
+    color: #35bf22;
+}
+
+.tab__content {
+    width: calc(100% - 20px);
+    border: solid 1px #bbbbbb;
+    padding: 12px 10px;
+    position: absolute;
+    left: 0;
+    top: 32px;
+}

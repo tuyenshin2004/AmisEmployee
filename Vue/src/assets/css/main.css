@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Notosans;
+    src: url(../Resource/fonts/notosans-regular.2cb88a13.woff2);
+}
+
+@font-face {
+    font-family: Notosans Bold;
+    src: url(../Resource/fonts/notosans-bold.3ede5aff.woff2);
+}
+
+@font-face {
+    font-family: Notosans Italic;
+    src: url(../Resource/fonts/notosans-italic.1c1aaac9.woff2);
+}
+
+@font-face {
+    font-family: Notosans Semibold;
+    src: url(../Resource/fonts/notosans-semibold.df3e6dc4.woff2);
+}
+
+
+/* * {
+    overflow: hidden;
+} */
+
+body {
+    /* không có khoảng cách với lề như mặc định */
+    margin: 0px;
+    font-family: Notosans;
+    font-size: 13px;
+    color: #111;
+    background-color: #eceef1;
+    ;
+    overflow-x: unset;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 180px calc(100% - 180px);
+    grid-template-rows: 48px calc(100% - 48px);
+}
+
+.closeMenu {
+    grid-template-columns: 56px calc(100% - 56px) !important;
+}
+
+.pointer {
+    cursor: pointer;
+}

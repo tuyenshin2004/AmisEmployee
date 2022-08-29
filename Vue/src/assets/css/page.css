@@ -1,0 +1,15 @@
+.page {
+    height: 100%;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    padding: 16px 30px 0px 16px;
+    /* Không vượt quá box */
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.padding-mid {
+    /* căn vừa đủ khoảng trống */
+    flex-grow: 1!important;
+    min-width: 50px;
+}

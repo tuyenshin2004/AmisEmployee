@@ -1,0 +1,131 @@
+@import url(./formTabs.css);
+.form {
+    /* ẩn form */
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.511);
+    z-index: 10;
+}
+
+.isShowForm {
+    display: block !important;
+}
+
+.form__content {
+    /* Theo vị trí cha */
+    position: absolute;
+    background-color: #ffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form__btn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.form__header {
+    padding: 20px 12px 20px 32px;
+    display: flex;
+}
+
+.form-header__title {
+    font-weight: bold;
+    font-size: 24px;
+    padding-right: 24px;
+    cursor: grab;
+}
+
+.form-header__checkbox {
+    align-items: center;
+    display: flex;
+    padding-right: 32px;
+}
+
+.label-input {
+    position: relative;
+}
+
+.label-input label {
+    font-weight: 700;
+    cursor: grab;
+}
+
+.form__body {
+    box-sizing: border-box;
+    margin: 0px 32px 20px;
+}
+
+.form__top {
+    display: flex;
+    align-items: center;
+}
+
+.form-top__left {
+    padding-right: 26px;
+}
+
+.form-top__left,
+.form-top__right {
+    width: 418px;
+}
+
+.form__body .form-row {
+    display: flex;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+.form__body .label-input+.label-input {
+    margin-left: 6px;
+}
+
+.form-row__half+.form-row__half {
+    margin-left: 32px;
+    width: 508px;
+    box-sizing: border-box;
+}
+
+.form__body .form-row__half {
+    display: flex;
+    align-items: center;
+}
+
+.gender-radio {
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.gender {
+    padding-left: 10px;
+}
+
+.form__footer {
+    margin: 0 32px;
+    height: 60px;
+    position: relative;
+    border-top: solid 1px #bbbbbb;
+    display: flex;
+    align-items: center;
+}
+
+.form__footer .footer__left {
+    display: flex;
+    align-items: center;
+}
+
+.form__footer .footer__right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0%;
+}

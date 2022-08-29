@@ -1,0 +1,315 @@
+    .icon {
+        background: url(../../Resource/img/Sprites.64af8f61.svg);
+    }
+    
+    .icon--16 {
+        width: 16px;
+        height: 16px;
+        background-size: 16px 16px;
+        background-repeat: no-repeat;
+    }
+    
+    .icon--20 {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+    }
+    
+    .icon--24 {
+        width: 24px;
+        height: 24px;
+        /* background-size: 24px 24px; */
+        background-repeat: no-repeat;
+    }
+    
+    .icon__toggle {
+        background-position: -424px -88px;
+    }
+    
+    .icon__dashboard {
+        background-position: -33px -1628px;
+        /* background-position-y: calc(100% - 43px); */
+    }
+    
+    .icon__cash {
+        background-position: -78px -1629px;
+    }
+    
+    .icon__deposit {
+        background-position: -121px -1631px;
+    }
+    
+    .icon__buy {
+        background-position: -165px -1630px;
+    }
+    
+    .icon__sell {
+        background-position: -206px -1629px;
+    }
+    
+    .icon__bill {
+        background-position: -254px -1630px;
+    }
+    
+    .icon__warehouse {
+        background-position: -294px -1630px;
+    }
+    
+    .icon__tool {
+        background-position: -339px -1631px;
+    }
+    
+    .icon__assets {
+        background-position: -382px -1630px;
+    }
+    
+    .icon__wage {
+        background-position: -471px -1663px;
+    }
+    
+    .icon__tax {
+        background-position: -427px -1632px;
+    }
+    
+    .icon__price {
+        background-position: -471px -1631px;
+    }
+    
+    .icon__synthetic {
+        background-position: -514px -1630px;
+    }
+    
+    .icon__budget {
+        background-position: -382px -1662px;
+    }
+    
+    .icon__report {
+        background-position: -552px -1632px;
+    }
+    
+    .icon__analysis {
+        background-position: -207px -1663px;
+    }
+    
+    .icon__bars {
+        background-position: -844px -30px;
+    }
+    
+    .icon__option-down {
+        background-position: -1129px -365px;
+        width: 14px;
+        height: 8px;
+    }
+    
+    .icon__download {
+        background-position: -2144px -200px;
+        width: 25px;
+        height: 24px;
+    }
+    
+    .icon__notification {
+        background-position: -788px -30px;
+    }
+    
+    .icon__info {
+        background-position: -1894px -88px;
+    }
+    
+    .icon__help {
+        background-position: -732px -31px;
+    }
+    
+    .icon__chat {
+        background-position: -899px -30px;
+    }
+    
+    .icon__setting {
+        background-position: -676px -30px;
+    }
+    
+    .icon__category {
+        background-position: -568px -30px;
+    }
+    
+    .icon__avatar {
+        background-position: -352px -894px;
+        width: 32px;
+        height: 32px;
+        margin-left: 16px;
+        border-radius: 50%;
+    }
+    
+    .icon__option {
+        background-position: -1800px -478px;
+        width: 8px;
+        height: 5px;
+    }
+    
+    .icon__back {
+        background-position: -228px -362px;
+        width: 8px;
+        height: 12px;
+    }
+    
+    .icon__search {
+        background-position: -992px -360px;
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        right: 12px;
+        margin: 12px 0px;
+        z-index: 1;
+        overflow: hidden;
+        cursor: pointer;
+    }
+    
+    .icon__search1 {
+        background-position: -992px -360px;
+        width: 16px;
+        height: 16px;
+        z-index: 1;
+    }
+    
+    .icon__dropdown--white {
+        background-position: -852px -365px;
+        width: 8px;
+        height: 5px;
+    }
+    
+    .icon__dropdown--black {
+        background-position: -560px -358px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .icon__refresh {
+        background-position: -425px -201px;
+    }
+    
+    .icon__excel {
+        background-position: -705px -200px;
+    }
+    
+    .icon__setting-list {
+        background-position: -90px -201px;
+    }
+    
+    .icon__down {
+        background-position: -900px -365px;
+        width: 8px;
+        height: 5px;
+    }
+    
+    .icon__close {
+        background-position: -147px -147px;
+        width: 22px;
+        height: 22px;
+    }
+    
+    .icon__ask {
+        background-position: -89px -145px;
+        width: 26px;
+        height: 26px;
+    }
+    
+    .icon__setting {
+        background-position: -676px -30px;
+        width: 24px;
+        height: 24px;
+    }
+    
+    .icon__arrow-dropdown {
+        background-position: -564px -365px;
+        width: 8px;
+        height: 5px;
+    }
+    
+    .icon__pen {
+        background-position: -2392px -404px;
+        width: 16px;
+        height: 16px;
+        margin: 0 10px;
+    }
+    
+    .icon__delete {
+        background-position: -464px -313px;
+        width: 15px;
+        height: 15px;
+    }
+    
+    .icon__error {
+        background-position: -746px -462px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .icon__info-dialog {
+        background-position: -666px -462px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .icon__warm {
+        background-position: -592px -463px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .icon__date-picker {
+        background-position: -128px -312px;
+        width: 16px;
+        height: 16px;
+    }
+    
+    .icon__toast-success {
+        background-position: -990px -462px;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .icon__toast-error {
+        background-position: -752px -462px;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .icon__toast-warm {
+        background-position: -598px -463px;
+        width: 36px;
+        height: 37px;
+    }
+    
+    .icon__toast-info {
+        background-position: -672px -462px;
+        width: 36px;
+        height: 36px;
+    }
+    
+    .icon__process-stock {
+        background-position: -1264px -200px;
+    }
+    
+    .icon__process-inventory-item {
+        background-position: -1152px -200px;
+    }
+    
+    .icon__process-unit-price {
+        background-position: -872px -256px;
+    }
+    
+    .icon__process-tool {
+        background-position: -1040px -200px;
+    }
+    
+    .icon__setting-active {
+        background-position: -648px -200px;
+    }
+    
+    .icon__tour {
+        background-position: -984px -144px;
+    }
+    
+    .icon__recent-log {
+        background-position: -648px -144px;
+    }

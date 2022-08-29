@@ -1,0 +1,76 @@
+.container-radio {
+    position: relative;
+    padding-left: 32px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-right: 20px;
+}
+
+
+/* ẩn radio mặc định */
+
+.container-radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+/* tạo 1 nút tuỳ chỉnh */
+
+.checkmark-radio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #ffffff;
+    border: solid 1px #bbbbbb;
+    border-radius: 50%;
+}
+
+.container-radio:hover input~.checkmark-radio {
+    background-color: #ccc;
+}
+
+
+/* màu khi radio được chọn */
+
+.container-radio input:checked~.checkmark-radio {
+    background-color: white;
+    border: solid 1px #019160;
+    height: 16px;
+    width: 16px;
+}
+
+
+/* tạo dấu tròn, ẩn khi không được chọn */
+
+.checkmark-radio:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* hiện dấu tròn khi được chọn */
+
+.container-radio input:checked~.checkmark-radio:after {
+    display: block;
+}
+
+
+/* style của dấu tròn*/
+
+.container-radio .checkmark-radio:after {
+    left: 3px;
+    top: 3.5px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: #35bf22;
+}

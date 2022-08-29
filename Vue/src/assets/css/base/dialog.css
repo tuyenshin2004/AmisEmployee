@@ -1,0 +1,84 @@
+.dialog {
+    /* ẩn dialog */
+    display: none;
+    /* Không bị phụ  thuộc bởi thành phần nào khác */
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.129);
+    z-index: 99;
+}
+
+.isShowDialog {
+    display: block !important;
+}
+
+.dialog__content {
+    /* Theo vị trí cha */
+    position: absolute;
+    background-color: #ffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 32px;
+}
+
+.dialog__content .dialog-body {
+    align-items: center;
+    display: flex;
+    width: 444px;
+    margin-bottom: 8px;
+}
+
+.dialog-body .message-content {
+    display: block;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.dialog-icon {
+    margin-right: 16px;
+}
+
+.dialog-text {
+    /* dàn đều chưx */
+    text-align: justify;
+    margin-top: 8px;
+}
+
+.dialog__footer {
+    /* height: 60px; */
+    padding-top: 16px;
+    position: relative;
+    border-top: solid 1px #bbbbbb;
+    display: flex;
+    align-items: center;
+}
+
+.dialog__footer .footer__left {
+    align-items: center;
+}
+
+.dialog__footer .footer__left+.footer__right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 0%;
+}
+
+.dialog__footer .footer__right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.dialog__footer .footer__right button {
+    margin-left: 16px;
+}
+
+.dialog__footer .footer__center {
+    /* căn chính giữa */
+    margin: 0 auto;
+}

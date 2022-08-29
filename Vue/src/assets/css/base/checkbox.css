@@ -1,0 +1,93 @@
+/* Tùy chỉnh nhãn (hộp đựng)*/
+
+.container-checkbox {
+    display: block;
+    position: relative;
+    /* pading bằng độ rộng của checkbox */
+    padding-left: 16px;
+    /* căn checkbox vào giữa  */
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* Ẩn hộp kiểm mặc định của trình duyệt*/
+
+.container-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+
+/* Tạo một hộp kiểm tùy chỉnh */
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 14px;
+    width: 14px;
+    background-color: #ffff;
+    border: solid 1px #bbbbbb;
+    border-radius: 4px;
+}
+
+
+/* Khi di chuột qua, thêm màu nền xám */
+
+.container-checkbox:hover input~.checkmark {
+    background-color: #e9ebee;
+}
+
+
+/* Khi hộp kiểm được chọn, hãy thêm nền màu xanh lam */
+
+.container-checkbox input:checked~.checkmark {
+    background-color: #ffff;
+    border: solid 1px #35bf22;
+    height: 14px;
+    width: 14px;
+}
+
+
+/* Tạo dấu kiểm (ẩn khi không được chọn) */
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+
+/* Hiển thị dấu kiểm khi được chọn */
+
+.container-checkbox input:checked~.checkmark:after {
+    display: block;
+}
+
+
+/* Tạo kiểu cho dấu kiểm */
+
+.container-checkbox .checkmark:after {
+    left: 4px;
+    top: 0px;
+    width: 5px;
+    height: 8px;
+    border: solid #35bf22;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.checkbox__span {
+    padding-left: 16px;
+}

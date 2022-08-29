@@ -1,0 +1,7 @@
+.page-content {
+    width: 100%;
+    /* trừ chiều cao page__header */
+    height: calc(100% - 76px);
+    margin: 16px 16px 16px 0px;
+    background-color: #ffff;
+}

@@ -1,0 +1,117 @@
+.field-input {
+    border: solid 1px #bbbbbb;
+    border-radius: 4px;
+    height: 32px;
+    padding: 0px 12px 0 10px;
+    /* để kích thước không bị tự động cộng thêm padding... */
+    box-sizing: border-box;
+    margin-top: 8px;
+}
+
+::placeholder {
+    font-size: 11px;
+    color: #bbbbbb;
+    background-image: none;
+}
+
+.field-input__icon {
+    /* không lặp lại */
+    background-repeat: no-repeat;
+    /* căn trục x, y */
+    background-position: 16px center;
+    padding-right: 40px;
+}
+
+.field-input:focus {
+    outline: none !important;
+    border: solid 1px #35bf22 !important;
+}
+
+.field-input.error {
+    border: solid 1px #ff4747;
+}
+
+.input-required::after {
+    content: "*";
+    color: red;
+}
+
+.field-input+span {
+    display: none;
+}
+
+.field-input.error+span {
+    display: block;
+    padding: 4px;
+    background: black;
+    color: #bbbbbb;
+    z-index: 11;
+    left: 15%;
+    position: absolute;
+    top: 50px;
+}
+
+#txtCode {
+    width: 150px;
+}
+
+#txtFullName {
+    width: calc(418px - 150px - 8px);
+}
+
+#txtDepartment {
+    width: 418px;
+}
+
+#txtPosition {
+    width: 418px;
+}
+
+#dbDoB {
+    width: 160px;
+}
+
+#txtGender {
+    width: 250px;
+}
+
+#txtCardID {
+    width: 245px;
+}
+
+#dbDateIssue {
+    width: calc(418px - 245px - 8px);
+}
+
+#txtIssue {
+    width: 418px;
+}
+
+#txtAddress {
+    width: 842px;
+}
+
+#txtMobilePhone,
+#txtLandlinePhone,
+#txtEmail {
+    width: 210px;
+    /* Nếu san đều body thì là 276px */
+}
+
+#txtBankName,
+#txtBankNumber,
+#txtBranchName {
+    width: 210px;
+}
+
+.contact>.label-input {
+    width: 25%;
+}
+
+.bank>.label-input {
+    width: 25%;
+}
+
+input:-internal-autofill-selected {
+    background-color: #f1f1f1 !important;
+}
